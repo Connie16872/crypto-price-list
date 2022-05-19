@@ -6,14 +6,10 @@ import { useEffect } from 'react'
 
 function CoinList() {
   const { coins, fetchCoins } = useCoin()
-  const titles = ['#',
-    '名稱', '價格', '市值'
-  ]
+  const titles = ['#', '名稱', '價格', '市值']
   useEffect(() => {
-    Promise.all([
-      fetchCoins({ page: 1, per_page: 30 }),
-    ])
-  }, [fetchCoins])
+    fetchCoins({ page: 1, per_page: 30 })
+  }, [])
 
   return (<>
     <div className="max-w-[1280px] overflow-x-auto">
