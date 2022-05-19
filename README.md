@@ -6,4 +6,4 @@ This website shows the top 30 crypto price of the current market using React, Ta
 
 Check out the [Demo](https://crypto-price-list.netlify.app/).
 
-![](src/assets/demo.png)
+![](src/assects/demo.png)
