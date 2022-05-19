@@ -20,7 +20,8 @@ function Header() {
         border-b-[1px] border-white
       "
     >
-      <img src="" alt="" />
+      <img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+
     </header>
   </>
 }

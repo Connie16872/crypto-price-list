@@ -15,7 +15,7 @@ function CoinItem({ coin }) {
     >
       <div className="flex items-center max-w-[140px]">
         <div className="w-[24px] h-[24px] rounded-full mr-[9px]">
-          <img src={coin.image} className="object-fit" />
+          <img src={coin.image} className="object-fit" alt='coin_image' />
         </div>
         <div>
           <p className="font-bold">{coin.name}</p>
@@ -23,8 +23,8 @@ function CoinItem({ coin }) {
         </div>
       </div>
     </td>
-    <td className="px-6 py-3">{coin.current_price}</td>
-    <td className="px-6 py-3">{coin.market_cap}</td>
+    <td className="px-6 py-3">{'$' + coin.current_price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</td>
+    <td className="px-6 py-3">{'$' + coin.market_cap.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</td>
   </tr >)
 }
 
