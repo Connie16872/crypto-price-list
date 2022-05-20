@@ -23,8 +23,8 @@ function CoinItem({ coin }) {
         </div>
       </div>
     </td>
-    <td className="px-6 py-3">{'$' + coin.current_price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</td>
-    <td className="px-6 py-3">{'$' + coin.market_cap.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</td>
+    <td className="px-6 py-3">{'$' + coin.current_price.toLocaleString()}</td>
+    <td className="px-6 py-3">{'$' + coin.market_cap.toLocaleString()}</td>
   </tr >)
 }
 
